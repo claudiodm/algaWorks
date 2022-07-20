@@ -1,0 +1,28 @@
+@Data → essa anotação e responsável por gerar um conjunto de anotações implícitas nela mesma como @ToString, @EqualsAndHashCode, @Getter e @Setter em todos os campos, e @RequiredArgsConstructor.
+
+@AllArgsConstructor → essa anotação é responsável por gerar um construtor com 1 parâmetro para cada atributo de sua classe. Você pode gerar um construtor para 1 ou mais parâmetros da sua classe de acordo com a sua necessidade.
+
+@NoArgsConstructor → essa anotação é responsável por gerar um construtor sem parâmetros, vale ressaltar que se tiver campos final na sua classe deverá usar um atributo force = true em sua anotação.
+
+--> CONTENT NEGOTIATION
+
+<!-- Negociação de conteúdo. Ele tem suporte a JSON e XML
+<dependency>
+    <groupId>com.fasterxml.jackson.dataformat</groupId>
+    <artifactId>jackson-dataformat-xml</artifactId>
+</dependency> -->
+
+Para declarar uma constatnte, basta vc colocar FINAL no inicio da declaração da variável.
+
+final Interger idade = 16;
+
+idade não poderá ser alterado o seu valor.
+
+--> O DevTool faz um restart otmizado
+--> qualquer alteração ele restarta o servidor sozinho
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-devtools</artifactId>
+    <scope>runtime</scope>
+</dependency>
