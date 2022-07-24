@@ -4,18 +4,22 @@
 
 @NoArgsConstructor → essa anotação é responsável por gerar um construtor sem parâmetros, vale ressaltar que se tiver campos final na sua classe deverá usar um atributo force = true em sua anotação.
 
+@AllArgsConstructor --> @Autowired --> já coloca automaticamente o construtor e o autowired.
+
+@Atowired é uma anotação do spring que define que queremos injetar uma instância que esta sendo gerenciada pelo spring. Você consegue injetar uma classe, mas não uma interface.
+
+
 --> CONTENT NEGOTIATION
 
-<!-- Negociação de conteúdo. Ele tem suporte a JSON e XML
+Negociação de conteúdo. Ele tem suporte a JSON e XML
 <dependency>
     <groupId>com.fasterxml.jackson.dataformat</groupId>
     <artifactId>jackson-dataformat-xml</artifactId>
-</dependency> -->
+</dependency> 
 
-Para declarar uma constatnte, basta vc colocar FINAL no inicio da declaração da variável.
-
+--> Declarando uma constante
+Para declarar uma constante, basta vc colocar FINAL no inicio da declaração da variável.
 final Interger idade = 16;
-
 idade não poderá ser alterado o seu valor.
 
 --> O DevTool faz um restart otmizado
@@ -26,3 +30,7 @@ idade não poderá ser alterado o seu valor.
     <artifactId>spring-boot-devtools</artifactId>
     <scope>runtime</scope>
 </dependency>
+
+
+
+--> @RequestBody - transforma o objetoJason passado num tipo Classe. Ex: Cliente
